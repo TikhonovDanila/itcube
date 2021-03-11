@@ -1,0 +1,29 @@
+header{
+    display: flex;
+    padding: 10px;
+    min-width: 15%;
+}
+.header-logo{
+    margin: 20px 0 30px 20px;
+}
+nav >ul {
+    position: absolute;
+}
+ul {
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+    color:#222;
+}
+a:hover{
+    color: #1FA2E1;
+
+}
+.show-menu {
+    display: none;
+}
+.address{
+    margin-top: 15px;
+}
+

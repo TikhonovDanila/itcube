@@ -1,0 +1,87 @@
+/*-----------------Сбрасываем базовые стили-------------------*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body,h1,h2,h3,h4,p,ul,ol,li,figure,figcaption,blockquote,dl,dd {
+    margin: 0;
+}
+ul[class],ol[class]  {
+    list-style: none;
+}
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+img {
+    display: block;
+}
+/*-----------------КОНЕЦ СБРОСА СТИЛЕЙ-------------------*/
+
+body{
+
+    background-image: url(../images/bg4-150x150.jpg);
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+
+}
+
+/*-----------------НАЧАЛО РАЗДЕЛА СТИЛЕЙ MAIN - правая часть-------------------*/
+main{
+    /*flex: 0 0 83.333333%;*/
+    display: flex;
+    flex-direction: column;
+    min-width: 1024px;
+    max-width: 1024px;
+
+}
+.posts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.posts-content{
+    max-width: 870px;
+
+}
+.posts-content h3{
+    text-align: center;
+}
+.posts-content p:nth-child(2){
+    text-indent: 20px;
+}
+.posts-image{
+
+
+}
+.posts-image image{
+    width: 150px;
+    height: 150px;
+}
+h2 {
+    text-align: center;
+}
+.pagination{
+    text-align: center;
+
+}
+
+.pagination li{
+    list-style-type: none;
+    display: inline;
+    padding: 0 15px 0 15px;
+    color: lightseagreen;
+
+}
+.current{
+    border: 1px dotted;
+    font-size: 18px;
+    padding: 3px;
+}

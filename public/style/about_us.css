@@ -1,0 +1,57 @@
+
+/*-----------------Сбрасываем базовые стили-------------------*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body,h1,h2,h3,h4,p,ul,ol,li,figure,figcaption,blockquote,dl,dd {
+    margin: 0;
+}
+ul[class],ol[class] {
+    list-style: none;
+}
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+img {
+    display: block;
+}
+/*-----------------КОНЕЦ СБРОСА СТИЛЕЙ-------------------*/
+
+body{
+
+    background-image: url(../images/bg4-150x150.jpg);
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    /*margin: 15px auto 0 auto;*/
+    margin-top: 2%;
+}
+
+/*-----------------НАЧАЛО РАЗДЕЛА СТИЛЕЙ MAIN - правая часть-------------------*/
+main{
+    display: flex;
+    flex-direction: column;
+    max-width: 55%;
+    min-width: 55%;
+
+
+}
+.main-wrapper{
+    margin: 0 auto;
+    max-width: 80%;
+}
+.main-wrapper h2 {
+    text-align: center;
+}
+.main-wrapper p {
+    text-indent: 20px;
+
+}
+/*-----------------КОНЕЦ РАЗДЕЛА MAIN-------------------*/
+
